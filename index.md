@@ -14,3 +14,13 @@
 
 ref: https://github.com/magicmonty/bash-git-prompt
 
+
+## Discard local changes
+
+    $ git checkout -- .
+
+## Replace local changes from remote
+
+    $ git fetch origin
+    $ git reset --hard origin/master
+
