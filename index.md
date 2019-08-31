@@ -24,3 +24,13 @@ ref: https://github.com/magicmonty/bash-git-prompt
     $ git fetch origin
     $ git reset --hard origin/master
 
+## Undoing the last commit
+
+You can continue to edit the same commit by making amends.
+
+    $ git commit --amend
+
+To undo a commit
+
+    $ git reflog
+    $ git reset --hard #####   <- commit number
