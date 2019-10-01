@@ -34,3 +34,13 @@ To undo a commit
 
     $ git reflog
     $ git reset --hard #####   <- commit number
+
+## Providing username and password
+
+WARNING: Adding your password to the clone URL will cause Git to store your plaintext password in .git/config. To securely store your password when using HTTP, use a credential helper. For example:
+
+    $ git config --global credential.helper cache
+    $ git config --global credential.https://github.com.username foo
+    $ git clone https://github.com/foo/repository.git
+    
+The above will cause Git to ask for your password once every 15 minutes (by default). See git [help credentials](https://git-scm.com/docs/gitcredentials) for details.
