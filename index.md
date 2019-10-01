@@ -8,6 +8,19 @@
 
     $ git fetch && git log origin/master..
 
+## git pull branches
+
+    $ git remote update
+    $ git pull --all
+
+This assumes all branches are tracked.
+
+If they aren't you can fire this in Bash:
+
+    $ for remote in `git branch -r `; do git branch --track $remote; done
+    
+Then run the command.
+
 # Plugins
 
 ## bash git-prompt
