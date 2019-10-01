@@ -21,6 +21,10 @@ If they aren't you can fire this in Bash:
     
 Then run the command.
 
+## link remote branch
+
+    $ git branch --set-upstream-to=origin/deploy deploy
+
 # Plugins
 
 ## bash git-prompt
