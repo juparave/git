@@ -61,3 +61,8 @@ WARNING: Adding your password to the clone URL will cause Git to store your plai
     $ git clone https://github.com/foo/repository.git
     
 The above will cause Git to ask for your password once every 15 minutes (by default). See git [help credentials](https://git-scm.com/docs/gitcredentials) for details.
+
+## Git branch graphs
+
+    $ git config --global alias.adog "log --all --decorate --oneline --graph"
+    $ git adog
