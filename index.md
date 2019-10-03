@@ -51,6 +51,16 @@ To undo a commit
 
     $ git reflog
     $ git reset --hard #####   <- commit number
+    
+## Add your server as a Git remote called 'deploy'
+
+git remote add deploy ssh://<your-name>@<your-ip>/srv/git/<your-project>.git/
+    
+    $ git remote add deploy ssh://fortan@zulu.prestatus.com/~/app/Fortan
+    
+## Push your code and deploy
+
+    $ git push deploy master
 
 ## Providing username and password
 
