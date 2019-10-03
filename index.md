@@ -56,7 +56,7 @@ To undo a commit
 
 git remote add deploy ssh://<your-name>@<your-ip>/srv/git/<your-project>.git/
     
-    $ git remote add deploy ssh://fortan@zulu.prestatus.com/~/app/Fortan
+    $ git remote add deploy ssh://project@prod.server.com/~/app/Project
     
 ## Push your code and deploy
 
