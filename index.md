@@ -54,6 +54,10 @@ To undo a commit
     
 ## Add your server as a Git remote called 'deploy'
 
+List remotes
+
+    $ git remote -v
+
 git remote add deploy ssh://<your-name>@<your-ip>/srv/git/<your-project>.git/
     
     $ git remote add deploy ssh://project@prod.server.com/~/app/Project
