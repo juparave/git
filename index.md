@@ -62,6 +62,12 @@ git remote add deploy ssh://<your-name>@<your-ip>/srv/git/<your-project>.git/
     
     $ git remote add deploy ssh://project@prod.server.com/~/app/Project
     
+If nobody is working in that remote non-bare repo, then it should be possible to push to a checked out branch.
+But to be more secure in that operation, you now can (with Git 2.3.0, February 2015), do in that remote repo:
+
+    $ git config receive.denyCurrentBranch updateInstead
+
+    
 ## Push your code and deploy
 
     $ git push deploy master
