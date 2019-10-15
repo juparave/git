@@ -82,6 +82,14 @@ WARNING: Adding your password to the clone URL will cause Git to store your plai
     
 The above will cause Git to ask for your password once every 15 minutes (by default). See git [help credentials](https://git-scm.com/docs/gitcredentials) for details.
 
+Also run
+
+    $ git config --global user.email "you@example.com"
+    $ git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
 ## Git branch graphs
 
     $ git config --global alias.adog "log --all --decorate --oneline --graph"
