@@ -4,9 +4,19 @@
 
     $ git fetch && git log ..origin/master
 
+    $ git fetch && git log --pretty=oneline --abbrev-commit --graph ..@{u}
+
 ## git outgoing
 
     $ git fetch && git log origin/master..
+
+    $ git log --pretty=oneline --abbrev-commit --graph @{u}.. --stat
+    
+Create alias in ~/.gitconfig
+
+    [alias]
+    out = log --pretty=oneline --abbrev-commit --graph @{u}.. --stat
+    in = !git fetch && git log --pretty=oneline --abbrev-commit --graph ..@{u}
 
 ## git pull branches
 
