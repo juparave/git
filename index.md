@@ -17,6 +17,13 @@ Create alias in ~/.gitconfig
     [alias]
     out = log --pretty=oneline --abbrev-commit --graph @{u}.. --stat
     in = !git fetch && git log --pretty=oneline --abbrev-commit --graph ..@{u}
+    
+## git and meld
+
+Add meld command
+
+    $ git config --global alias.meld '!git difftool -t meld --dir-diff'
+
 
 ## git pull branches
 
