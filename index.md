@@ -111,3 +111,15 @@ Omit --global to set the identity only in this repository.
 
     $ git config --global alias.adog "log --all --decorate --oneline --graph"
     $ git adog
+    
+## Tagging
+
+Annotated tag
+
+    $ git tag -a v1.0.3 -m "Releasing version v1.0.3"
+    
+Publishing tags
+
+    $ git push --tags
+    
+
