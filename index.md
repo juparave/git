@@ -46,7 +46,7 @@ Then run the command.
 
 ## bash git-prompt
 
-ref: https://github.com/magicmonty/bash-git-prompt
+ref: [Bash Git Prompt](https://github.com/magicmonty/bash-git-prompt)
 
 
 ## Discard local changes
