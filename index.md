@@ -24,6 +24,20 @@ Add meld command
 
     $ git config --global alias.meld '!git difftool -t meld --dir-diff'
 
+# Branching
+
+## Create a new branch
+
+    $ git branch refactoring
+    
+## Switching Branches
+
+    $ git checkout refactoring
+    
+## Merging
+
+    $ git checkout master
+    $ git merge refactoring
 
 ## git pull branches
 
