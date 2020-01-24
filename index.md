@@ -38,6 +38,10 @@ Add meld command
 
     $ git checkout master
     $ git merge refactoring
+    
+## Push new branch
+
+    $ git push -u origin refactoring
 
 ## git pull branches
 
