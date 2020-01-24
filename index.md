@@ -28,7 +28,13 @@ Add meld command
 
 ## Create a new branch
 
+Create a new branch
+
     $ git branch refactoring
+    
+Create a new branch and switch to it at the same time
+
+    $ git checkout -b refactoring
     
 ## Switching Branches
 
@@ -39,7 +45,18 @@ Add meld command
     $ git checkout master
     $ git merge refactoring
     
+## Delete local branch
+After the merge and if you no longer need that branch. You can delete it with the -d option to git branch
+
+    $ git branch -d refactoring
+
+## Delete remote branch
+To delete a remote branch, you can’t use the git branch command. Instead, use the git push command with --delete flag, followed by the name of the branch you want to delete. You also need to specify the remote name (origin in this case) after git branch.
+
+    $ git push --delete refactoring
+
 ## Push new branch
+If you want to save the new branch in the repository
 
     $ git push -u origin refactoring
 
