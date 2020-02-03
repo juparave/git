@@ -98,8 +98,14 @@ ref: [Bash Git Prompt](https://github.com/magicmonty/bash-git-prompt)
 You can continue to edit the same commit by making amends.
 
     $ git commit --amend
+    
+To undo last commit
 
-To undo a commit
+    $ git reset --soft HEAD~1
+    
+--soft flag: this makes sure that the changes in undone revisions are preserved. After running the command, you'll find the changes as uncommitted local modifications in your working copy.
+
+To undo a commit removing changes
 
     $ git reflog
     $ git reset --hard #####   <- commit number
