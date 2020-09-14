@@ -110,6 +110,20 @@ To undo a commit removing changes
     $ git reflog
     $ git reset --hard #####   <- commit number
     
+## Remove file from tracking
+
+To stop tracking a file you need to remove it from the index. This can be achieved with this command.
+
+    $ git rm --cached <file>
+    
+If you want to remove a whole folder, you need to remove all files in it recursively.
+
+    $ git rm -r --cached <folder>
+    
+The removal of the file from the head revision will happen on the next commit.
+
+WARNING: While this will not remove the physical file from your local, it will remove the files from other developers machines on next git pull.
+    
 ## Add your server as a Git remote called 'deploy'
 
 List remotes
