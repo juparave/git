@@ -3,20 +3,20 @@
 ## Rename local branch
 
 ```bash
-  $ git checkout refactoring
-  Switched to branch 'refactoring'
-  Your branch is up to date with 'origin/refactoring'.
+    $ git checkout refactoring
+    Switched to branch 'refactoring'
+    Your branch is up to date with 'origin/refactoring'.
 ```
 
 ### Set the new name, this will work with local repos
 
 ```bash
-  $ git branch –m shippers
-  fatal: Not a valid object name: 'shippers'.
+    $ git branch –m shippers
+    fatal: Not a valid object name: 'shippers'.
 ```
-  
+
 You can't rename a remote git branch like you do with local repositories, this one is connected to a remote `'origin/refactoring'` repo
-  
+
 ## Rename a remote branch
 
 There is no way to rename a remote branch, so the steps to do it is by deleting the old repo and create a new one.
@@ -39,12 +39,12 @@ There is no way to rename a remote branch, so the steps to do it is by deleting 
 
 ### Create new branch
 
-  $ git checkout -b shippers
-  
+    $ git checkout -b shippers
+
 ### Push the new branch with the correct name, and reset the upstream branch
 
-  $ git push origin –u shippers
-  
+    $ git push origin –u shippers
+
 ### List all branches
 
 ```bash
@@ -60,24 +60,23 @@ There is no way to rename a remote branch, so the steps to do it is by deleting 
     remotes/origin/origin/deploy
     remotes/origin/origin/master
     remotes/origin/refactoring
-    remotes/origin/shippers  
+    remotes/origin/shippers
 ```
 
 ### Update local repo and set upstream
 
-``` bash
-  $ git pull --rebase
-  $ git branch --set-upstream-to=origin/shippers shippers
+```bash
+    $ git pull --rebase
+    $ git branch --set-upstream-to=origin/shippers shippers
 ```
 
 ### Delete local branch
 
 ```bash
-  $ git branch -d refactoring
-  Deleted branch refactoring (was 93acd6fd).
+    $ git branch -d refactoring
+    Deleted branch refactoring (was 93acd6fd).
 ```
 
 ### Delete remote branch
 
-  $ git push origin ––delete refactoring
-  
+    $ git push origin ––delete refactoring
