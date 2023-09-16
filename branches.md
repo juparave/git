@@ -80,3 +80,16 @@ There is no way to rename a remote branch, so the steps to do it is by deleting 
 ### Delete remote branch
 
     $ git push origin ––delete refactoring
+
+Your local repo may still retain a remote reference that points to the remote
+branch you just deleted. This is known as Git’s remote tracking branch.
+
+    $ git branch --delete --remotes origin/refactoring
+
+However, if the branch has already been deleted from the GitHub or BitBucket
+server, a simpler approach is to call the git fetch command with the prune
+option. The prune option removes any remote tracking branch in your local
+repository that points to a remote branch that has been deleted on the server.
+
+    $ git fetch origin --prune
+
