@@ -1,5 +1,6 @@
 - [hooks](hooks.md)
 - [branches](branches.md)
+- [troubleshooting](troubleshooting.md)
 
 ## git incoming
 
